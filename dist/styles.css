@@ -168,6 +168,7 @@ p { margin: 0 0 1rem; }
   gap: 22.5px;
   margin-bottom: 27px;
 }
+.question:focus { outline: none; }
 .question-info {
   padding: 8px;
   background: var(--status-bg);
