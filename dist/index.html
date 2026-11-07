@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2025 AMC10A ENG&amp;CHN | Unofficial mock</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="questions.js" defer></script>
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#quiz-content">Skip to main content</a>
+  <header class="topbar">
+    <button class="drawer-toggle" type="button" aria-label="Toggle course navigation" aria-controls="drawer" aria-expanded="true"><span data-icon="menu"></span></button>
+    <a class="brand" href="#notice"><img src="association.png" width="102" height="36" alt="Magic Square Association 奇方協會"> <span>Online</span></a>
+    <details class="top-menu">
+      <summary><span data-icon="course"></span> Courses</summary>
+      <div class="dropdown"><a href="#attempt">2026 AMC1012 XESHK</a></div>
+    </details>
+    <details class="top-menu language">
+      <summary><span data-icon="globe"></span> <span id="language-label">English (en)</span></summary>
+      <div class="dropdown">
+        <button type="button" data-language="all">English + 中文</button>
+        <button type="button" data-language="en">English (en)</button>
+        <button type="button" data-language="hk">繁體中文</button>
+        <button type="button" data-language="cn">简体中文</button>
+      </div>
+    </details>
+    <div class="top-account">
+      <span class="practice-label">Unofficial mock</span>
+      <span class="bell" data-icon="bell" aria-hidden="true"></span>
+      <details class="top-menu profile">
+        <summary>Practice Student <span class="avatar" data-icon="avatar"></span></summary>
+        <div class="dropdown">
+          <a href="#notice">Practice information</a>
+          <button type="button" data-action="reset">Start a new attempt</button>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <nav id="drawer" class="drawer" aria-label="Course navigation">
+    <div class="drawer-group">
+      <a href="#attempt"><span data-icon="course"></span> 2026 AMC1012 XESHK</a>
+      <span><span data-icon="users"></span> Participants</span>
+      <a href="#attempt"><span data-icon="pencil"></span> Tests</a>
+      <a href="#results"><span data-icon="table"></span> Grades</a>
+    </div>
+    <div class="drawer-group">
+      <a href="#notice"><span data-icon="dashboard"></span> Dashboard</a>
+      <a href="#notice"><span data-icon="home"></span> Site home</a>
+      <span><span data-icon="calendar"></span> Calendar</span>
+      <a href="#attempt"><span data-icon="course"></span> My courses</a>
+      <a class="subcourse" href="#attempt"><span data-icon="course"></span> 2026 AMC1012 XESHK</a>
+    </div>
+  </nav>
+
+  <div class="site">
+    <main id="quiz-content" class="main" tabindex="-1">
+      <header class="course-header panel">
+        <h1>2026 American Mathematics Competitions 10/12 — The Think Academy Hong Kong</h1>
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumbs">
+            <li><a href="#notice">Dashboard</a></li>
+            <li>My courses</li>
+            <li><a href="#attempt">2026 AMC1012 XESHK</a></li>
+            <li>Practice Competitions</li>
+            <li><a href="#attempt">2025 AMC10A ENG&amp;CHN</a></li>
+            <li id="crumb-current" aria-current="page" hidden></li>
+          </ol>
+        </nav>
+      </header>
+
+      <div class="quiz-layout">
+        <div class="panel quiz-panel">
+          <section id="attempt">
+            <form id="questions" aria-label="Practice questions"></form>
+            <div class="save-attempt"><a class="button primary" href="#summary">Save attempt ...</a></div>
+          </section>
+
+          <section id="summary" aria-labelledby="summary-title" hidden>
+            <h2>2025 AMC10A ENG&amp;CHN</h2>
+            <h3 id="summary-title">Summary of attempt</h3>
+            <table class="status-table">
+              <thead><tr><th scope="col">Question</th><th scope="col">Status</th></tr></thead>
+              <tbody id="summary-rows"></tbody>
+            </table>
+            <div class="summary-actions">
+              <a class="button secondary" href="#attempt">Return to attempt</a>
+              <p class="summary-time">Time left <strong data-time></strong></p>
+              <p id="submission-deadline"></p>
+              <button type="button" class="button secondary" data-action="submit">Submit all and finish</button>
+            </div>
+          </section>
+
+          <section id="results" aria-labelledby="results-title" hidden>
+            <h2>2025 AMC10A ENG&amp;CHN</h2>
+            <h3 id="results-title">Practice results</h3>
+            <p id="results-message"></p>
+            <table class="status-table" id="results-table">
+              <thead><tr><th scope="col">Question</th><th scope="col">Your answer</th><th scope="col">Correct answer</th><th scope="col">Points</th></tr></thead>
+              <tbody id="results-rows"></tbody>
+            </table>
+            <button type="button" class="button secondary" data-action="reset">Start a new attempt</button>
+          </section>
+
+          <section id="notice" aria-labelledby="notice-title" hidden>
+            <h2 id="notice-title">Notice</h2>
+            <p>Unofficial practice simulation for the 2025 AMC 10A. The 25 prompts are adapted from the MAA AMC paper.</p>
+            <p>You have 75 minutes. Each correct answer earns 6 points, each unanswered question earns 1.5 points, and each incorrect answer earns 0 points. Your answers are saved in this browser.</p>
+            <p><a href="https://circles.math.ucla.edu/circles/lib/data/Handout-4907-5186.pdf" target="_blank" rel="noopener">Original 2025 AMC 10A paper (PDF)</a></p>
+            <a class="button primary" href="#attempt">Return to attempt</a>
+          </section>
+
+          <nav class="activity-nav" aria-label="Activity navigation">
+            <a href="#notice">◄ NOTICE</a>
+            <select id="jump-to" aria-label="Jump to a question">
+              <option value="">Jump to...</option>
+            </select>
+            <a href="#results">Practice results ►</a>
+          </nav>
+        </div>
+
+        <aside class="panel quiz-nav" aria-labelledby="navigation-title">
+          <h3 id="navigation-title">Question navigation</h3>
+          <nav class="question-grid" id="question-grid" aria-label="Questions"></nav>
+          <a href="#summary" class="nav-save">Save attempt ...</a>
+          <p class="nav-time">Time left <strong data-time>1:15:00</strong></p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p>Practice Student · Unofficial mock</p>
+        <p><a href="#attempt">2026 AMC1012 XESHK</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <dialog id="confirmation" aria-labelledby="dialog-title">
+    <form method="dialog">
+      <header><h3 id="dialog-title"></h3><button type="submit" class="dialog-close" value="cancel" aria-label="Close">×</button></header>
+      <p id="dialog-message"></p>
+      <footer><button class="button secondary" value="cancel" autofocus>Cancel</button> <button class="button primary" value="confirm" id="dialog-confirm"></button></footer>
+    </form>
+  </dialog>
+  <span class="sr-only" id="announcement" role="status"></span>
+</body>
+</html>
